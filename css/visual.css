@@ -1,0 +1,174 @@
+.visual {
+  position: relative;
+  /* header 의 높이값 */
+  margin-top: 100px;
+}
+/* header 의 높이값 */
+.visual-fixed {
+  margin-top: 100px !important;
+}
+@media screen and (max-width: 1024px) {
+  .visual {
+    /* header 의 높이값 */
+    margin-top: 75px;
+  }
+  /* header 의 높이값 */
+  .visual-fixed {
+    margin-top: 75px !important;
+  }
+}
+
+.visual .sw-visual {
+}
+.visual .sw-visual .swiper-wrapper .swiper-slide {
+  height: 780px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sw-visual-control {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  z-index: 9999;
+}
+.sw-visual-pg .swiper-pagination-bullet {
+  position: relative;
+  background: none;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 !important;
+  width: 30px;
+  height: 40px;
+
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.sw-visual-pg .swiper-pagination-bullet em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.sw-visual-pg .swiper-pagination-bullet-active em {
+}
+
+.sw-visual-pg .swiper-pagination-bullet-active {
+  background: none;
+  border-radius: 0;
+  opacity: 1;
+  width: 130px;
+
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.visual-txt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-left: 45px;
+}
+.visual-txt .inner {
+}
+.visual-title {
+  font-size: 47px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.visual-desc {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  /* opacity: 0.6; */
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.visual-link {
+  display: inline-block;
+  padding: 0 25px;
+  border-radius: 30px;
+  margin-top: 35px;
+  font-size: 15px;
+  line-height: 52px;
+  color: #fff;
+  letter-spacing: -0.3px;
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.visual-link i {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.visual-link:hover i {
+  animation-name: icon-ani;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+@keyframes icon-ani {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .visual .sw-visual .swiper-wrapper .swiper-slide {
+    height: 575px;
+  }
+  .visual-title {
+    font-size: 40px;
+  }
+  .visual-link {
+    background: #0072ff;
+  }
+}
+@media screen and (max-width: 760px) {
+  .visual .sw-visual .swiper-wrapper .swiper-slide {
+    height: 465px;
+  }
+  .sw-visual-pg .swiper-pagination-bullet-active {
+    width: 92px;
+  }
+  .visual-title {
+    font-size: 34px;
+  }
+  .visual-txt {
+    padding-left: 20px;
+  }
+}
